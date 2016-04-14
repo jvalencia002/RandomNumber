@@ -1,17 +1,35 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package randomnumber;
 
-import java.util.Random;
 public class RandomNumber {
-	
-
-	public int GetANumber_Between_1_and_10() {
-		Random rand = new Random();
-		return rand.nextInt(10) + 1;
-	
-	}
+        
+  private int Low;
+  private int High;
+  public int GetANumer_Between_1_and_10()
+  {
+  	int computerNum;
+  	computerNum = 1 + (int)(Math.random()*10);
+  	return computerNum;
+  }
+  public int GetANumber()
+  {
+  	int computerNum;
+  	computerNum = Low + (int)(Math.random()*High);
+  	return computerNum;
+  }
+  public RandomNumber()
+  {
+  	Low = 1;
+  	High = 10;
+  }
+  public RandomNumber( int low ,int high )
+  {
+  	Low = low;
+  	High = high;
+  }
 }
+        
+
+    
+        
+	
