@@ -8,7 +8,7 @@ public class RandomNumber {
   public int GetANumer_Between_1_and_10()
   {
   	int computerNum;
-  	computerNum = 1 + (int)(Math.random()*10);
+  	computerNum = 1 + (int)(Math.random()*5);
   	return computerNum;
   }
   public int GetANumber()
@@ -20,7 +20,7 @@ public class RandomNumber {
   public RandomNumber()
   {
   	Low = 1;
-  	High = 10;
+  	High = 5;
   }
   public RandomNumber( int low ,int high )
   {
